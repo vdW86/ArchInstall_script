@@ -6,5 +6,5 @@ Scripts voor base&amp;chroot
 
 * vervolgens arch-chroot /mnt
 * cd /etc/skel
-* nu script chroot laten lopen, hier vraagt hij om je nieuwe gebruikersnaam & wachtwoord.
+* nu script 'chroot' laten lopen, hier vraagt hij om je nieuwe gebruikersnaam & wachtwoord.
   doe je met ./chroot
