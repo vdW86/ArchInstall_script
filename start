@@ -12,7 +12,7 @@ pacstrap -i /mnt base base-devel --noconfirm
 echo "fstab genereren"
 genfstab -U -p /mnt >> /mnt/etc/fstab
 echo "chroot kopieeren"
-cp chroot /mnt/etc/skel/
+cp  ArchInstall_script/chroot /mnt/etc/skel/
 echo "###################################"
 echo "###########The End#################"
 echo "###################################"
