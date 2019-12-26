@@ -1,0 +1,71 @@
+######################
+# - Conky settings - #
+######################
+update_interval 1
+total_run_times 0
+net_avg_samples 1
+cpu_avg_samples 1
+if_up_strictness link
+
+imlib_cache_size 0
+double_buffer yes
+no_buffers yes
+
+format_human_readable
+
+#####################
+# - Text settings - #
+#####################
+use_xft yes
+#xftfont Liberation Sans:size=8
+xftfont 123:size=8
+override_utf8_locale yes
+text_buffer_size 2048
+
+#############################
+# - Window specifications - #
+#############################
+own_window_class Conky
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_argb_visual yes
+own_window_argb_value 0
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+alignment top_right
+gap_x -180
+gap_y -20
+minimum_size 000 120
+#maximum_width 0 600
+
+default_bar_size 0 0
+
+#########################
+# - Graphics settings - #
+#########################
+draw_shades no
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+
+default_color white
+default_shade_color red
+default_outline_color green
+
+color0 EAEAEA
+color1 1a80b6 
+#color2 white
+#color3 CE5C00
+#color4 EAEAEA
+
+TEXT
+#############
+# - CLOCK - #
+#############
+
+${voffset 10}${color0}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -70}${offset 10}${color1}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color0}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}      ${font}${voffset 24}${font GE Inspira:pixelsize=58}${offset -180}${time %A}${font}
+
+
+

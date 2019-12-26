@@ -1,0 +1,4 @@
+
+#!/bin/bash
+conky -c $HOME/.conkycolors/conkyrc &
+conky -c $HOME/.conkycolors/conkyrc_l 
