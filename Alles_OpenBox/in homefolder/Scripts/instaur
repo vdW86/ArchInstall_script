@@ -1,0 +1,52 @@
+#!/bin/bash
+#***********************************************************************************
+bin="$(basename $0)"
+pkg_root="$HOME/pkg"
+url="https://aur.archlinux.org/cgit/aur.git/snapshot"
+verbose=1
+fake=0
+#***********************************************************************************
+if [ $# -eq 0 ]; then
+	echo "$bin: Geef een pakketnaam in"
+	exit 1
+fi
+#***********************************************************************************
+cd "$pkg_root/"
+old="$OLDPWD"
+for pkg_name in "$@"; do
+	echo "fetching '$pkg_name'"
+
+	# probably a better way to get / verify this file?
+	curl -L -O "$url/$pkg_name.tar.gz" 2> /dev/null
+
+	tar xvf "$pkg_name.tar.gz" 2> /dev/null
+
+	if [ $? -ne 0 ]; then
+		echo "$bin: Pakket '$pkg_name' bestaat niet, of is verwijdert"
+		rm "$pkg_name.tar.gz"
+		continue
+	fi
+	# end block
+
+		rm -v "$pkg_name.tar.gz"
+#***********************************************************************************
+echo -n "Wil je het ook pakket installeren? [j/N]: "
+read -r line
+	if [ "$line" == "j" ]; then
+	cd "$pkg_name/"
+	makepkg -sic
+	cp *.pkg.tar.xz "$pkg_root"
+	cd "$pkg_root"
+fi
+if [ "$line" == "n" ]; then
+	cd "$pkg_name/"
+	makepkg -s
+	cp *.pkg.tar.xz "$pkg_root"
+	cd "$pkg_root"
+fi
+#***********************************************************************************
+# "delete extracted package contents"	
+rm -rf "$pkg_name"
+echo
+done
+cd "$old"

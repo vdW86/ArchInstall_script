@@ -1,0 +1,37 @@
+#**********************************************
+#Browser Tools
+keepass-plugin-http	
+#**********************************************
+#Tools
+balena-etcher
+woeusb
+gscreenshot
+gksu		
+#**********************************************
+#Netwerk
+wpa_supplicant_gui
+#**********************************************	
+#Themes
+numix-cursor-theme
+numix-gtk-theme-git
+numix-icon-theme-git
+#**********************************************	
+#Openbox
+obmenu
+obmenu-generator
+#**********************************************
+#Terminal Tools
+yaourt	
+package-query
+customizepkg
+advcp
+#**********************************************	
+#Grafisch Nvidia
+nvdock
+#**********************************************
+#Extra
+grml-rescueboot
+#**********************************************
+#Vbox
+virtualbox-ext-oracle
+#**********************************************

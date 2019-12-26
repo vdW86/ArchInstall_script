@@ -1,0 +1,44 @@
+https://medium.com/hacker-toolbelt/install-and-configure-openbox-f326790bdb08
+*********************************************************************************************
+KIJKEN !!!!!!!
+https://www.youtube.com/watch?v=s5fK90sGJ4I
+gebruikt : pacman -S compton gmrun gsimplecal lxappearance mousepad nitrogen obconf openbox pcmanfm scrot tint2 volumeicon xarchiver xorg-xbacklight xscreensaver
+
+info https://wiki.learnlinux.tv/index.php/Showing_off_my_Custom_Arch_Linux_Openbox_Installation
+*********************************************************************************************
+https://www.youtube.com/watch?v=GE5qNANComM
+PROGRAMS I INSTALLED ON THIS VIDEO INCLUDE:
+(# pacman -S ) xorg-server lightdm lightdm-gtk-greeter openbox obconf pcmanfm tint2 nitrogen 
+xterm termite firefox geany sudo lxappearance gnome-backgrounds xarchiver unzip libgl network-manager-applet
+
+I enabled lightdm with:
+# systemctl enable lightdm.service
+enable networkmanager
+# systemctl enable NetworkManager 
+
+install : 
+open tint2 interminal : tint2
+open nitrogen interminal : nitrogen
+Nitrogen voeg de map background toe, of een andere map waar pics staan
+
+Voeg een map toe aan .confi genaamd openbox.
+Voeg hier een nieuw textdocument aan toe genaamd 'autostart'
+open dit bestand en voeg dit toe :
+"tint2 &
+nitrogen --restore &"
+
+installeer het volgende bestand :
+menumaker
+Vervolgens tik je dit in terminal : mmaker openbox -f -t xterm
+26
+
+
+*************extra************
+install:
+xdg-utils
+
+mssn
+synapse
+*************extra************
+feh => Fast and light imlib2-based image viewer
+xev => om toetsen te vinden (mulimedia-toetsen)

@@ -1,0 +1,6 @@
+menu refresh : mmaker openbox -f -t xterm > oud
+installeer : obmenu en obmenu-generator
+vervolgens voor automatisch menu : obmenu-generator -p
+wil je met icons dan : obmenu-generator -p -i
+
+Aanpassingen aan terminal layout dan "xrdb -merge ~/.Xresources" uitvoeren in terminal
