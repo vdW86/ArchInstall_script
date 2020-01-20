@@ -61,6 +61,10 @@ echo "Welke schijf moet Grub geinstalleerd worden? (sda) :"
 read string
 grub-install --target=i386-pc /dev/$string
 grub-mkconfig -o /boot/grub/grub.cfg
+###########################################
+MYENP=dhcpcd@$(ip link | awk -F: '$0 !~ "lo|vir|^[^0-9]"{print $2a;getline}')
+MYENP="$(echo -e "${MYENP}" | tr -d '[:space:]')"
+systemctl enable $DH$MYENP.service
 
 
 
