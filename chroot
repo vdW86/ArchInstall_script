@@ -54,7 +54,7 @@ echo "Defaults rootpw" >> /etc/sudoers
 ###########################################
 #############Pakketten install#############
 ###########################################
-pacman -S bash-completion dhcpcd nano pacman-contrib grub linux xorg-server xorg-xclock xorg-xinit xterm --noconfirm
+pacman -S bash-completion dhcpcd nano pacman-contrib grub linux xorg-server xorg-xclock xorg-xinit xterm alsa-firmware alsa-plugins alsa-tools alsa-utils pulseaudio pulseaudio-alsa pulseaudio-equalizer volumeicon pavucontrol firefox firefox-i18n-nl chromium thunderbird thunderbird-i18n-nl geany leafpad tint2 screenfetch compton picom tumbler lxappearance nitrogen lightdm lightdm-gtk-greeter mtools ntfs-3g gparted sudo util-linux libmicrodns vlc shotgun pinta gimp ffmpegthumbnailer ufw gufw networkmanager network-manager-applet obconf openbox gmrun xarchiver unzip pcmanfm gvfs-afc gvfs-smb keepass libreoffice-fresh libreoffice-fresh-nl ntp python2-xdg speedtest-cli youtube-dl xdg-user-dirs xdg-utils sed git ncdu mlocate rsync libgl lib32-mesa-demos xorg-xcalc xorg-xdm xorg-xev xorg-xkill xorg-xbacklight xscreensaver libisoburn zathura zathura-pdf-poppler pulseaudio-equalizer-ladspa hardinfo  --noconfirm
 ###########################################
 ###########################################
 echo "Welke schijf moet Grub geinstalleerd worden? (sda) :" 
